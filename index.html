@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="منيو كافيه السلطان الإلكتروني للمشروبات والأراجيل والعصائر."
+    />
+    <title>منيو كافيه السلطان</title>
+    <link rel="icon" href="assets/logo.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="hero">
+        <div class="brand-mark">
+          <img src="assets/logo.jpg" alt="لوقو كافيه السلطان" />
+        </div>
+        <p class="eyebrow">أهلاً وسهلاً</p>
+        <h1> كوفي شوب السلطان</h1>
+        <p class="hero-copy">
+          اختر مزاجك من منيو السلطان، مشروبات مختارة وأراجيل بنكهات تناسب جلستك.
+        </p>
+
+        <section class="social-links" aria-label="وسائل التواصل الاجتماعي">
+          <p class="social-title">تابعنا وتواصل معنا</p>
+          <div class="social-list">
+            <a
+              class="social-link social-link-facebook"
+              href="https://www.facebook.com/share/1DGrVy3ekP/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M14.2 8.4V6.7c0-.8.2-1.2 1.3-1.2H17V2.3c-.7-.1-1.5-.2-2.3-.2-2.7 0-4.5 1.6-4.5 4.5v1.8H7.3V12h2.9v9.9h3.6V12h2.9l.5-3.6h-3z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social-link social-link-instagram"
+              href="https://www.instagram.com/alsultan_cafe_karak?igsh=eWVzd3RreTl5a3Ft"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M7.8 2.8h8.4c2.8 0 5 2.2 5 5v8.4c0 2.8-2.2 5-5 5H7.8c-2.8 0-5-2.2-5-5V7.8c0-2.8 2.2-5 5-5zm8.4 2H7.8c-1.7 0-3 1.3-3 3v8.4c0 1.7 1.3 3 3 3h8.4c1.7 0 3-1.3 3-3V7.8c0-1.7-1.3-3-3-3zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm4.7-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social-link social-link-whatsapp"
+              href="https://wa.me/962772710399"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 2.4a9.4 9.4 0 0 0-8 14.4L2.8 21.6l5-1.2A9.4 9.4 0 1 0 12 2.4zm0 1.9a7.5 7.5 0 0 1 6.4 11.4 7.4 7.4 0 0 1-9.9 2.7l-.4-.2-2.4.6.6-2.3-.3-.4A7.5 7.5 0 0 1 12 4.3zm-3 3.8c-.2 0-.5.1-.7.3-.4.4-1 1-1 2.2s1 2.5 1.1 2.7c.2.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.1-1.3-.1-.1-.2-.2-.5-.4l-1.8-.9c-.2-.1-.4-.2-.6.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-.8-1.9c-.2-.5-.5-.5-.7-.5H9z"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="quick-tools" aria-label="البحث والتنقل">
+        <label class="search-box" for="menu-search">
+          <span aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            id="menu-search"
+            autocomplete="off"
+            placeholder="ابحث عن صنف..."
+          />
+        </label>
+
+        <nav class="category-nav" aria-label="أقسام المنيو">
+          <div class="category-track" id="category-nav"></div>
+        </nav>
+      </section>
+
+      <section class="menu-shell" id="menu-sections" aria-live="polite"></section>
+
+      <p class="empty-state" id="empty-state" hidden>
+        لا توجد نتائج مطابقة للبحث حالياً.
+      </p>
+    </main>
+
+    <footer class="site-footer" aria-label="معلومات المطور">
+      <p class="developer-credit">
+        تم التصميم والتطوير بواسطة <span>وديع الصرايرة</span>
+      </p>
+      <div class="developer-social-list">
+        <a
+          class="developer-social-link developer-social-website"
+          href="https://wadih.mdigitaljo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="الموقع الشخصي لوديع الصرايرة"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M12 2.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19zm6.9 8.5h-3a15.8 15.8 0 0 0-1-5 7.6 7.6 0 0 1 4 5zM12 4.4c.8 1.1 1.7 3.3 2 6.6h-4c.3-3.3 1.2-5.5 2-6.6zM10.1 6a15.8 15.8 0 0 0-1 5h-3a7.6 7.6 0 0 1 4-5zM6.1 13h3c.1 2 .5 3.8 1 5a7.6 7.6 0 0 1-4-5zm5.9 6.6c-.8-1.1-1.7-3.3-2-6.6h4c-.3 3.3-1.2 5.5-2 6.6zM13.9 18c.5-1.2.9-3 1-5h3a7.6 7.6 0 0 1-4 5z"
+            />
+          </svg>
+        </a>
+        <a
+          class="developer-social-link developer-social-whatsapp"
+          href="https://wa.me/962789011225"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="واتساب وديع الصرايرة"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M12 2.4a9.4 9.4 0 0 0-8 14.4L2.8 21.6l5-1.2A9.4 9.4 0 1 0 12 2.4zm0 1.9a7.5 7.5 0 0 1 6.4 11.4 7.4 7.4 0 0 1-9.9 2.7l-.4-.2-2.4.6.6-2.3-.3-.4A7.5 7.5 0 0 1 12 4.3zm-3 3.8c-.2 0-.5.1-.7.3-.4.4-1 1-1 2.2s1 2.5 1.1 2.7c.2.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.1-1.3-.1-.1-.2-.2-.5-.4l-1.8-.9c-.2-.1-.4-.2-.6.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-.8-1.9c-.2-.5-.5-.5-.7-.5H9z"
+            />
+          </svg>
+        </a>
+        <a
+          class="developer-social-link developer-social-instagram"
+          href="https://www.instagram.com/wadih.nedal/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="إنستغرام وديع الصرايرة"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M7.8 2.8h8.4c2.8 0 5 2.2 5 5v8.4c0 2.8-2.2 5-5 5H7.8c-2.8 0-5-2.2-5-5V7.8c0-2.8 2.2-5 5-5zm8.4 2H7.8c-1.7 0-3 1.3-3 3v8.4c0 1.7 1.3 3 3 3h8.4c1.7 0 3-1.3 3-3V7.8c0-1.7-1.3-3-3-3zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm4.7-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="العودة للأعلى">
+      ↑
+    </button>
+
+    <script src="js/menu-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
